@@ -119,14 +119,13 @@ def get_con_cafe():
 
 
 
-
-# ENDPUNKTE BUCH
-
-
 @app.get("/")
 def grueße():
     return "Hallo Bücherwurm!"
 
+
+
+# ENDPUNKTE BUCH
 
 
 #alle Bücher ausgeben
@@ -182,9 +181,6 @@ def modify_entrie(id: int, buch: Buch, con = Depends(get_con)):
         cursor.close()
         con.close()
     return result
-
-
-
 
 
 
